@@ -5,8 +5,8 @@ import PreLoader from "./PreLoader/PreLoader"
 import Skill from "./skill-section/SkillGrid";
 
 //Blobity
-import useBlobity from 'blobity/lib/react/useBlobity';
-import { initialBlobityOptions } from "./utils/BlobityConfig"
+// import useBlobity from 'blobity/lib/react/useBlobity';
+// import { initialBlobityOptions } from "./utils/BlobityConfig"
 import { useEffect } from "react";
 
 import dynamic from "next/dynamic";
@@ -17,13 +17,13 @@ const Footer = dynamic(()=> import("./footer/Footer"))
 
 export default function Home() {
 
-  const blobityInstance = useBlobity(initialBlobityOptions)
+  // const blobityInstance = useBlobity(initialBlobityOptions)
 
-  useEffect(()=>{
-    if(blobityInstance.current){
-      window.blobity = blobityInstance.current
-    } 
-  },[blobityInstance]);
+  // useEffect(()=>{
+  //   if(blobityInstance.current){
+  //     window.blobity = blobityInstance.current
+  //   } 
+  // },[blobityInstance]);
 
  useEffect(()=>{
   window.scrollTo({
